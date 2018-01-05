@@ -1,0 +1,126 @@
+[
+  {
+    "name": "冀",
+    "provice": "河北"
+  },
+  {
+    "name": "辽",
+    "provice": "辽宁"
+  },
+  {
+    "name": "皖",
+    "provice": "安徽"
+  },
+  {
+    "name": "苏",
+    "provice": "江苏"
+  },
+  {
+    "name": "鄂",
+    "provice": "湖北"
+  },
+  {
+    "name": "晋",
+    "provice": "山西"
+  },
+  {
+    "name": "吉",
+    "provice": "吉林"
+  },
+  {
+    "name": "粤",
+    "provice": "广东"
+  },
+  {
+    "name": "宁",
+    "provice": "宁夏"
+  },
+  {
+    "name": "京",
+    "provice": "北京"
+  },
+  {
+    "name": "豫",
+    "provice": "河南"
+  },
+  {
+    "name": "黑",
+    "provice": "黑龙江"
+  },
+  {
+    "name": "鲁",
+    "provice": "山东"
+  },
+  {
+    "name": "浙",
+    "provice": "浙江"
+  },
+  {
+    "name": "桂",
+    "provice": "广西"
+  },
+  {
+    "name": "蒙",
+    "provice": "内蒙古"
+  },
+  {
+    "name": "闽",
+    "provice": "福建"
+  },
+  {
+    "name": "川",
+    "provice": "四川"
+  },
+  {
+    "name": "渝",
+    "provice": "重庆"
+  },
+  {
+    "name": "津",
+    "provice": "天津"
+  },
+  {
+    "name": "云",
+    "provice": "云南"
+  },
+  {
+    "name": "湘",
+    "provice": "湖南"
+  },
+  {
+    "name": "新",
+    "provice": "新疆"
+  },
+  {
+    "name": "赣",
+    "provice": "江西"
+  },
+  {
+    "name": "甘",
+    "provice": "甘肃"
+  },
+  {
+    "name": "陕",
+    "provice": "陕西"
+  },
+  {
+    "name": "贵",
+    "provice": "贵州"
+  },
+  {
+    "name": "青",
+    "provice": "青海"
+  },
+  {
+    "name": "藏",
+    "provice": "西藏"
+  },
+  {
+    "name": "琼",
+    "provice": "海南"
+  },
+  {
+    "name": "沪",
+    "provice": "上海"
+  }
+]
