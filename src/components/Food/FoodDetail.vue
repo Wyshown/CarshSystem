@@ -386,7 +386,7 @@
               <button type="button" class="btn btn-primary check" v-on:click="submit">保存</button>
             </div>
             <div class="col-sm-2 btn-margin-top">
-              <button type="button" class="btn btn-primary check" v-on:click="submit" >发布</button>
+              <button type="button" class="btn btn-primary check" v-on:click="$router.back(-1)" >返回</button>
             </div>
           </div>
         </div>
@@ -628,7 +628,7 @@
         api.requestJava('post', url, _params)
           .then(response => {
             that.isLoading = false
-//            this.$router.push({name: 'FoodList'})
+            this.$router.push({name: 'FoodList'})
           }).catch(error => {
             that.isLoading = true
             console.log(error)
