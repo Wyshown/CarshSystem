@@ -100,6 +100,23 @@
         </div>
       </div>
 
+      <!--食物安全等级-->
+      <div class="form-group ">
+        <label class="col-sm-2 control-label padding-left-right-0">食物安全等级：</label>
+        <div class="col-sm-9">
+          <input type="radio" value="1" v-model="healthLightModel" name="healthLightModelRadio"> 推荐&nbsp &nbsp &nbsp
+          <input type="radio" value="2" v-model="healthLightModel" name="healthLightModelRadio"> 适量 &nbsp &nbsp &nbsp
+          <input type="radio" value="3" v-model="healthLightModel" name="healthLightModelRadio"> 少吃
+        </div>
+      </div>
+      <div class="form-group ">
+        <label class="col-sm-2 control-label padding-left-right-0">食物安全等级备注：</label>
+        <div class="col-sm-9">
+          <input  class="form-control" v-model="healthLightGradeRemarkModel"  placeholder="请输入食物安全等级备注" >
+        </div>
+      </div>
+
+      <!--热量-->
       <div class="form-group ">
         <label class="col-sm-2 control-label padding-left-right-0">热量：</label>
         <div class="col-sm-9">
@@ -447,6 +464,9 @@
         goodAliseModel: '', // 食物别名
         weightModel: '100', // 食物重量
 
+        healthLightModel: 2,  // 食物安全等级
+        healthLightGradeRemarkModel: '', // 食物安全等级备注
+
         caloryModel: '', // 热量
         caloryStateRemarkModel: '2', // 热量安全等级备注
 
@@ -575,6 +595,9 @@
           'foodAlias': that.goodAliseModel,
           'weight': that.weightModel,
 
+          'healthLight': that.healthLightModel,
+          'healthLightGradeRemark': that.healthLightGradeRemarkModel,
+
           'calory': that.caloryModel,
           'caloryStateRemark': that.caloryStateRemarkModel,
           'fat': that.fatModel,
@@ -620,6 +643,7 @@
         }
 
         console.log('请求的参数===', _params)
+
         let url = '/food/updateFood'
 
         if (Number(_params.id) === 0) {
@@ -649,6 +673,7 @@
               that.isLoading = false
               console.log('请求获得的参数1111111111---han------')
               that.foodObj = response.data.data
+
               console.log(that.foodObj)
 
               that.foodCodeModel = that.foodObj.foodCode
@@ -656,6 +681,9 @@
               that.foodEnNameModel = that.foodObj.foodEnName
               that.goodAliseModel = that.foodObj.foodAlias
               that.weightModel = that.foodObj.weight
+
+              that.healthLightModel = that.foodObj.healthLight
+              that.healthLightGradeRemarkModel = that.foodObj.healthLightGradeRemark
 
               that.caloryModel = that.foodObj.calory
               that.caloryStateRemarkModel = that.foodObj.caloryStateRemark
@@ -688,6 +716,7 @@
               that.serviceSelected = that.foodObj.foodType
 
               that.glModel = that.foodObj.gl
+
               that.glStateRemarkModel = that.foodObj.glStateRemark
               that.giModel = that.foodObj.gi
               that.giStateRemarkModel = that.foodObj.giStateRemark
