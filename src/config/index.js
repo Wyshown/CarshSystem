@@ -1,7 +1,11 @@
 export default {
   // 测试
   serverURI: '/api',
-  serverJavaURI: 'http://localhost:3000/api',
+  // 本地环境
+  // serverJavaURI: 'http://localhost:3000/api',
+
+  // 正式环境
+  serverJavaURI: 'http://101.37.125.239:30080/ckd/api',
   uploadImage: '/upload',
   // 生产
   // serverURI: 'http://www.gouchehui.com/cashsysback.php/',
